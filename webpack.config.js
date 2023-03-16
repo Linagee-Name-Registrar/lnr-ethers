@@ -1,18 +1,18 @@
-var webpack = require('webpack');
-var path = require('path');
-var package = require('./package.json');
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
-var env = process.env.WEBPACK_ENV;
+let webpack = require('webpack');
+let path = require('path');
+let packageJSON = require('./package.json');
+let UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+let env = process.env.WEBPACK_ENV;
 
-var libraryName = package.name;
-var config;
+let libraryName = packageJSON.name;
+let config;
 
 if (true/*env === 'production'*/) {
   config = {
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: libraryName + "-" + package.version + '.js',
+      filename: 'index.js',
       globalObject: 'this',
       library: {
         name: 'LNR',
