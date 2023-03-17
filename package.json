@@ -6,7 +6,7 @@
   "scripts": {
     "production": "WEBPACK_ENV=build webpack",
     "development": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "version": "auto-changelog -p && git add CHANGELOG.md"
+    "changelog": "auto-changelog -p && git add CHANGELOG.md"
   },
   "files": [
     "./dist/*"
@@ -18,9 +18,6 @@
   ],
   "author": "Derp Herpenstein",
   "license": "MIT",
-  "dependencies": {
-    "npm-packlist": "^7.0.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Linagee-Name-Registrar/lnr-ethers.git"
