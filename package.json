@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Linagee-Name-Registrar/lnr-ethers#readme",
   "peerDependencies": {
-    "@adraffy/ens-normalize": "1.8.8",
+    "@adraffy/ens-normalize": "^1.9.0",
     "ethers": "^5.7.2"
   },
   "devDependencies": {
