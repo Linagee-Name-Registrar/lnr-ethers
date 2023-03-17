@@ -111,7 +111,7 @@ class LNR {
 
   /**
    * Takes a domain, normalizes it, checks that it is not a subdomain, is an og
-   * domain, and isnt too long
+   * domain, and isn't too long
    *
    * @param _name The domain to check
    * @returns an array with the first element being a boolean indicating if the domain is valid,

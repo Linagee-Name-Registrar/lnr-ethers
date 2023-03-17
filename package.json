@@ -1,6 +1,6 @@
 {
   "name": "@linagee/lnr-ethers",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Integrates the LNR resolver and Ethers in an easy to use package",
   "main": "./dist/index.js",
   "scripts": {
@@ -18,9 +18,6 @@
   ],
   "author": "Derp Herpenstein",
   "license": "MIT",
-  "dependencies": {
-    "npm-packlist": "^7.0.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Linagee-Name-Registrar/lnr-ethers.git"
@@ -30,7 +27,7 @@
   },
   "homepage": "https://github.com/Linagee-Name-Registrar/lnr-ethers#readme",
   "peerDependencies": {
-    "@adraffy/ens-normalize": "1.8.8",
+    "@adraffy/ens-normalize": "^1.9.0",
     "ethers": "^5.7.2"
   },
   "devDependencies": {
