@@ -1,15 +1,15 @@
 {
-  "name": "lnr-ethers",
-  "version": "1.1.0",
+  "name": "@linagee/lnr-ethers",
+  "version": "1.2.1",
   "description": "Integrates the LNR resolver and Ethers in an easy to use package",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "production": "WEBPACK_ENV=build webpack",
     "development": "WEBPACK_ENV=dev webpack --progress --colors --watch",
-    "test": "node test/test.js"
+    "changelog": "auto-changelog -p && git add CHANGELOG.md"
   },
   "files": [
-    "dist/*"
+    "./dist/*"
   ],
   "keywords": [
     "LNR",
@@ -18,12 +18,20 @@
   ],
   "author": "Derp Herpenstein",
   "license": "MIT",
-  "dependencies": {
-    "@adraffy/ens-normalize": "1.8.8",
-    "ethers": "^5.7.2",
-    "npm-packlist": "^7.0.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Linagee-Name-Registrar/lnr-ethers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Linagee-Name-Registrar/lnr-ethers/issues"
+  },
+  "homepage": "https://github.com/Linagee-Name-Registrar/lnr-ethers#readme",
+  "peerDependencies": {
+    "@adraffy/ens-normalize": "^1.9.0",
+    "ethers": "^5.7.2"
   },
   "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "webpack-cli": "^5.0.1"
   }
 }

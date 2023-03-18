@@ -1,7 +1,7 @@
 import {ens_normalize} from '@adraffy/ens-normalize';
-import resolverAbi from '../abi/lnrResolverAbi.json';
-import wrapperAbi from '../abi/wrapperAbi.json';
-import linageeAbi from '../abi/linageeAbi.json';
+import resolverAbi from './abi/lnrResolverAbi.json';
+import wrapperAbi from './abi/wrapperAbi.json';
+import linageeAbi from './abi/linageeAbi.json';
 
 
 /**
