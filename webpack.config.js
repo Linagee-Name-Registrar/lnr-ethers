@@ -12,7 +12,7 @@ if (true/*env === 'production'*/) {
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'index.js',
+      filename: libraryName + "-" + packageJSON.version + '.js',
       globalObject: 'this',
       library: {
         name: 'LNR',
