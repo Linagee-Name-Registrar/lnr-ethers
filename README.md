@@ -10,7 +10,25 @@
 </p>
 This package simplifies interacting with the Linagee Name Registrar contract, wrapper and resolver.
 
-To generate the library, run "npx webpack"
+## Build the package
+
+To generate the library, run:
+
+```bash
+npm run build
+```
+This will generate the following distribution files in the /dist folder:
+- CommonJS: dist/cjs/index.cjs.js
+- ES module: dist/es/index.es.js
+- UMD/browser: dist/umd/index.umd.js
+- Minified UMD: dist/umd-min/index.umd.min.js
+
+You can also use webpack if you prefer:
+
+```bash
+ npx webpack
+```
+Note that this will only generate a minimized index.js file in the /dist folder that can be used in the browser.
 
 ## Getting Started
 ### Note: for domains to be used with the resolver, they must first be unwrapped
