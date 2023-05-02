@@ -289,6 +289,67 @@ export class LNR {
         }
       }
 
+  /**
+   * Gets the text record for a name
+   *
+   * Example:
+   * ```
+   * lnr.getTextRecord("0xhal", "contentcontract");
+   * ```
+   *
+   * @param _name The name to get the text record of
+   * @param _key The key of the text record to get
+   * @returns The text record for the specified name and key
+   */
+  async getTextRecord(_name, _key) {
+    const parsedName = this.ethers.utils.formatBytes32String(_name);
+
+    return this.resolverContract.getTextRecord(parsedName, _key).then(function(result) {
+        return result;
+    });
+  }
+
+  /**
+   * Sets the text record for a name
+   *
+   * Example:
+   * ```
+   * lnr.setTextRecord("0xhal", "contentcontract", "0x4F53Eae17346d6c0f96215Af157c7F8e093E17F1");
+   * ```
+   *
+   * @param _name The name to set the text record of
+   * @param _key The key of the text record to set
+   * @param _value The value of the text record to set
+   * @returns A promise that resolves when the transaction is complete
+   */
+  async setTextRecord(_name, _key, _value) {
+    const parsedName = this.ethers.utils.formatBytes32String(_name);
+
+    return this.resolverContract.setTextRecord(parsedName, _key, _value).then(function(result) {
+        return result;
+    });
+  }
+
+  /**
+   * Unsets the text record for a name
+   *
+   * Example:
+   * ```
+   * lnr.unsetTextRecord("0xhal", "contentcontract");
+   * ```
+   *
+   * @param _name The name to unset the text record of
+   * @param _key The key of the text record to unset
+   * @returns A promise that resolves when the transaction is complete
+   */
+  async unsetTextRecord(_name, _key) {
+    const parsedName = this.ethers.utils.formatBytes32String(_name);
+
+    return this.resolverContract.unsetTextRecord(parsedName, _key).then(function(result) {
+        return result;
+    });
+  }
+
 
   // --------------------------- WRAPPER ---------------------------
 

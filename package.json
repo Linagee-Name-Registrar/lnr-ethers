@@ -1,6 +1,6 @@
 {
   "name": "@linagee/lnr-ethers",
-  "version": "1.3.0-rc.4",
+  "version": "1.3.0",
   "description": "Integrates the LNR resolver and Ethers in an easy to use package",
   "main": "dist/cjs/index.cjs.js",
   "module": "dist/es/index.es.js",
